@@ -8,7 +8,7 @@ import {CircularProgress} from '@material-ui/core'
 
 const API_KEY='e0d61118'
 
-const series=['avengers','harry potter','iron man','fast and furious']
+const series=['avengers','harry potter','iron man','fast and furious','game of thrones']
 
 type Props={
     movies:any
