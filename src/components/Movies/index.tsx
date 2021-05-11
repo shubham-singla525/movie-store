@@ -30,7 +30,7 @@ const Movies:React.FC<Props>=props=>{
     useEffect(()=>{
 
        const promises=series.map(series=>{
-            return fetch(`http://www.omdbapi.com/?s=${encodeURIComponent(series)}&apikey=${API_KEY}&page=1`)
+            return fetch(`https://www.omdbapi.com/?s=${encodeURIComponent(series)}&apikey=${API_KEY}&page=1`)
             .then(res=>res.json())
         })
        Promise.all(promises).then((movies:any)=>{
